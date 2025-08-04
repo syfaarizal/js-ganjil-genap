@@ -1,25 +1,25 @@
 let input;
 
 while (true) {
-    input = prompt("Masukin angka cuy! (ketik 'exit' buat keluar)");
+    input = prompt("Enter a number (type 'exit' to quit)");
 
     if (input === "exit") {
-        console.log("Oke cuy, keluar dari program. Bye 👋");
+        console.log("Goodbye! 👋");
         break;
     }
 
-    const angka = parseFloat(input);
+    const number = parseFloat(input);
 
-    if (isNaN(angka)) {
-        console.log("Yeu kocak, ini bukan angka 😅"); 
-    } else if (angka < 0) {
-        console.log("📉 Ini angka negatif ya...");
-    } else if (angka % 10 === 0 && angka % 2 === 0) {
-        console.log("Nah, ini angka genap dan kelipatan 10 cuy! 🎉");
-    } else if (angka % 2 === 0) {
-        console.log("Nah, ini angka genap cuy! 🔸");
+    if (isNaN(number)) {
+        console.log("❌ Please enter a valid number 😅"); 
+    } else if (number < 0) {
+        console.log("📉 This is a negative number...");
+    } else if (number % 10 === 0 && number % 2 === 0) {
+        console.log("🎊 This is an even number and multiple of 10!");
+    } else if (number % 2 === 0) {
+        console.log("🔸 This is an even number!");
     } else {
-        console.log("Nah, ini angka ganjil cuy! 🔹");
+        console.log("🔹 This is an odd number!");
     }
 }
-
+          
